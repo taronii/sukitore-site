@@ -1,0 +1,59 @@
+{
+  "name": "sukitore-diet-membership",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://taronii.github.io/sukitore-site",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "autoprefixer": "^10.4.14",
+    "firebase": "^11.8.1",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-icons": "^4.8.0",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.11.1",
+    "react-scripts": "^5.0.1",
+    "tailwindcss": "^3.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "node esbuild-react.js && cp public/.htaccess build/",
+    "build:react": "react-scripts build && cp public/.htaccess build/",
+    "build:enhanced": "node enhanced-build.js",
+    "build:legacy": "react-scripts build --verbose && cp public/.htaccess build/",
+    "build:debug": "set DEBUG=* && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "serve": "node serve.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.5",
+    "esbuild-plugin-copy": "^2.1.1"
+  }
+}

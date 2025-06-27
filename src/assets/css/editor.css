@@ -1,0 +1,61 @@
+/* エディターボタンのスタイル */
+.editor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+  background: white;
+  border: 1px solid #0A192F;
+  border-bottom: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.editor-btn {
+  padding: 4px 8px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.editor-btn:hover {
+  background: #e0e0e0;
+  border-color: #999;
+}
+
+.editor-btn.bold {
+  font-weight: bold;
+}
+
+.editor-btn.italic {
+  font-style: italic;
+}
+
+/* プレビューエリアのスタイル */
+.preview-area {
+  margin-top: 12px;
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.preview-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #D4AF37;
+}
+
+.preview-content {
+  background: white;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  max-height: 240px;
+  overflow-y: auto;
+}

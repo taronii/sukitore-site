@@ -1,0 +1,5 @@
+
+> sukitore-diet-membership@0.1.0 build
+> react-scripts build && cp public/.htaccess build/
+
+Creating an optimized production build...
